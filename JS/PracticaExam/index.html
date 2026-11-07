@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad Integrada JavaScript - Todo en Uno</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f9; color: #333; }
+        h1, h2 { color: #2c3e50; }
+        section { background: white; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .flex-container { display: flex; gap: 10px; align-items: center; }
+        input[type="text"], input[type="number"] { padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        input[type="button"], input[type="submit"] { padding: 8px 15px; background-color: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        input[type="button"]:hover, input[type="submit"]:hover { background-color: #2980b9; }
+        table { border-collapse: collapse; margin-top: 10px; }
+        td, th { padding: 10px; border: 1px solid #ddd; text-align: center; }
+        .error-img { border: 2px dashed red; padding: 5px; }
+    </style>
+</head>
+<body onload="ejecutarInicio()" onunload="alert('¡Hasta luego! Gracias por completar la actividad integrada.')">
+
+    <h1>Actividad Evaluativa Global: JavaScript en Entorno Cliente</h1>
+    <p>Esta página unifica todas las prácticas de la presentación en una experiencia fluida.</p>
+
+    <section id="bienvenida-seccion">
+        <div id="saludo-contenedor"></div>
+    </section>
+
+    <section>
+        <h2>1. Datos del Usuario y Variables</h2>
+        <p>A continuación se calculan los días que has vivido según la información suministrada al inicio:</p>
+        <div id="resultado-vida"></div>
+    </section>
+
+    <section>
+        <h2>2. Funciones, Parámetros y Ámbito de Variables</h2>
+        <p>Introduce un número para calcular su cubo de forma aislada:</p>
+        <div class="flex-container">
+            <input type="number" id="num-cubo" placeholder="Ej. 3">
+            <input type="button" value="Calcular Cubo" onclick="procesarCubo()">
+        </div>
+        <div id="resultado-cubo" style="margin-top: 10px; font-weight: bold;"></div>
+        <br>
+        <input type="button" value="Verificar Ámbito (Local vs Global)" onclick="demostrarAmbito()">
+        <div id="resultado-ambito" style="margin-top: 10px; color: #7f8c8d;"></div>
+    </section>
+
+    <section>
+        <h2>3. Diálogos, Temporizadores e if...else</h2>
+        <div class="flex-container">
+            <input type="button" value="Lanzar Alerta Simple" onclick="alerta()">
+            <input type="button" value="Lanzar Confirmación" onclick="probarConfirmacion()">
+            <input type="button" value="Iniciar Temporizador (5s)" onclick="iniciarTemporizador()">
+        </div>
+        <br>
+        <p><strong>Evaluación if...else:</strong> Compara si un número es mayor o menor a 50:</p>
+        <div class="flex-container" id="form-test-if">
+            <input type="text" size="3" maxlength="3" id="numero-condicion" placeholder="0-99">
+            <input type="button" value="Comprobar Número" onclick="test();">
+        </div>
+        <div id="resultado-condicion" style="margin-top: 10px; font-weight: bold;"></div>
+    </section>
+
+    <section>
+        <h2>4. Demostración de Bucles (For & While)</h2>
+        <input type="button" value="Ejecutar Bucles" onclick="ejecutarBucles()">
+        <div class="flex-container" style="align-items: flex-start; margin-top: 10px;">
+            <div id="print-for" style="background:#eee; padding:10px; border-radius:4px; min-width:120px;">Bucle For...</div>
+            <div id="print-while" style="background:#eee; padding:10px; border-radius:4px; min-width:120px;">Bucle While...</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>5. Gestión Interactiva de Sucesos (Events)</h2>
+        <div class="flex-container" style="flex-direction: column; align-items: flex-start; gap: 15px;">
+            <div>
+                <label><strong>Sucesos onClick y onFocus:</strong></label><br>
+                <input id="texto-foco-1" size="35" onfocus="focoTexto(1)" placeholder="Haz clic aquí (Apellido)..."><br style="margin-bottom: 5px;">
+                <input id="texto-foco-2" size="35" onfocus="focoTexto(2)" placeholder="Haz clic aquí (Nombre)...">
+            </div>
+            
+            <div>
+                <label><strong>Suceso onError:</strong> (Se dispara automáticamente al no encontrarse la imagen)</label><br>
+                <img src="imagen_inexistente.gif" onerror="mensaje_err()" class="error-img" alt="Espacio de imagen con error">
+            </div>
+
+            <div>
+                <label><strong>Sucesos onMouseOver y onMouseOut:</strong> (Pasa el ratón para alternar gráficos)</label><br>
+                <img src="https://picsum.photos/id/1/200/100" name="im" width="200" height="100" 
+                     onmouseover="alert('Esta sección posee copyright'); document.im.src='https://picsum.photos/id/10/200/100'" 
+                     onmouseout="document.im.src='https://picsum.photos/id/1/200/100'" 
+                     style="cursor: crosshair; border: 1px solid #333;">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>6. Validación Total de Formularios, Campos y Cálculos Rápidos</h2>
+        
+        <form name="formValidacion" onsubmit="return validaCamposVacios()">
+            <h3>A) Validación de Datos Obligatorios</h3>
+            <input type="text" name="texto1" size="20" placeholder="Campo Obligatorio 1"><br><br>
+            <input type="text" name="texto2" size="20" placeholder="Campo Obligatorio 2"><br><br>
+            <input type="text" name="texto3" size="20" placeholder="Campo Obligatorio 3"><br><br>
+            <input type="submit" value="Enviar Datos Obligatorios">
+        </form>
+        <hr>
+
+        <h3>B) Espejo de Texto en Tiempo Real</h3>
+        <form name="formEspejo">
+            <input type="text" name="origen" size="20" placeholder="Escribe algo aquí..."><br><br>
+            <input type="text" name="destino" size="20" placeholder="Se copiará aquí automáticamente" readonly><br><br>
+            <input type="button" value="Transferir Manualmente (Confirmar)" onclick="transferirTexto()">
+        </form>
+        <hr>
+
+        <h3>C) Validación de Formato (Código Postal)</h3>
+        <form name="formPostal">
+            <label>Código Postal (Máx. 5 números):</label>
+            <input type="text" name="textoCP" size="5" maxlength="5">
+            <input type="button" value="Validar CP" onclick="validaCP()">
+        </form>
+        <hr>
+
+        <h3>D) Calculadora Comercial Integrada</h3>
+        <form name="formCompra">
+            <table>
+                <tr>
+                    <th>Cantidad</th>
+                    <th>Precio por unidad</th>
+                    <th>Precio Total</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="num1" size="3" placeholder="Cant."></td>
+                    <td><input type="hidden" name="num2" value="2.56">2,56 €</td>
+                    <td><input type="text" name="num3" size="7" readonly> €</td>
+                </tr>
+            </table>
+            <br>
+            <input type="button" value="Calcular Total" onclick="calcularCompra()">
+            <input type="button" value="Borrar Factura" onclick="anularCompra()">
+        </form>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

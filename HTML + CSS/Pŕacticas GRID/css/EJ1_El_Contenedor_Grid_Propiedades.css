@@ -1,0 +1,16 @@
+* {
+    background-color: grey;
+}
+.Filas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-auto-rows: 100px; 
+    gap: 15px;
+    width: 50%;
+}
+
+.caja {
+    background: #e8d7b5;
+    display: flex;
+    border: solid 1px black;
+}

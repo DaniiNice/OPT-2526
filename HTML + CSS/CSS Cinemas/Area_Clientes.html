@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro</title>
+    <link rel="stylesheet" href="css/estilos2.css" type="text/css"/>
+</head>
+<body>
+    <!-- CABECERA DIVIDIDA EN 3 -->
+    <div class="contenedor">
+        <header class="cabecera">
+            <div class="columna izquierda">
+                <img src="img/CARRETE.JPG" alt="Carrete izquierdo">
+            </div>
+            <div class="columna centro logo">
+                <img src="img/logo.bmp" alt="Logo">
+            </div>
+            <div class="columna derecha">
+                <img src="img/CARRETE.JPG" alt="Carrete derecho">
+            </div>
+        </header>
+
+        <!-- CONTENIDO -->
+        <main class="contenido">
+            <section class="Titulo">
+                <h1>ÁREA DE CLIENTES</h1>
+            </section>
+            <nav class="menu izquierdo">
+                <a href="Principal.html">Principal</a>
+                <a href="Nuestra_Cartelera.html">Nuestra Cartelera</a>
+                <a href="Nuestras_Salas.html">Nuestras Salas</a>
+                <a href="Nuestros_Menus.html">Nuestros Menús</a>
+                <a href="Nuestros_Premios.html">Nuestros Premios</a>
+                <a href="Foro.html">El foro Cinem@s</a>
+            </nav>
+
+            <!-- COLUMNA IZQUIERDA -->
+            <section class="Lista2">
+                <div class="col-izq">
+                <p>En Cinem@s queremos premiar la fidelidad de nuestros
+                clientes. Por ello, te ofrecemos la posibilidad de registrarte
+                como cliente y por cada entrada que compres online acumularás
+                puntos canjeables por regalos o entradas gratuitas.</p>
+                <p>Si ya eres cliente registrado, entra en tu página:</p>
+                    <form class="login">
+                        <label>Número de cliente:</label>
+                        <input type="text">
+                        <label>Contraseña:</label>
+                        <input type="password">
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
+
+                <!-- COLUMNA DERECHA -->
+                <div class="col-der">
+                    <p>Si aún no te has registrado hazlo aquí y comienza a disfrutar de enormes ventajas</p>
+                    <form class="registro">
+                        <label for="nombre">Nombre (*):</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion">
+                        <label for="nif">NIF (*):</label>
+                        <input type="text" id="nif" name="nif" required>
+                        <label>Fecha de nacimiento:</label>
+                        <div class="fecha">
+                            <input type="text" placeholder="Día">
+                            <input type="text" placeholder="Mes">
+                            <input type="text" placeholder="Año">
+                        </div>  
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" id="telefono" name="telefono">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                        <label for="pass">Contraseña (*):</label>
+                        <input type="password" id="pass" name="pass" required>
+                        <label for="pass2">Repita su contraseña (*):</label>
+                        <input type="password" id="pass2" name="pass2" required>
+                        <div class="botones">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+                        </div>
+                        <p class="nota">(*) Campos obligatorios</p>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

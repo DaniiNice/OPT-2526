@@ -1,0 +1,40 @@
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+/* Las 1ªs celdas de cada fila, es decir la 1ª columna de la tabla, fondo verde */
+td:first-child {
+    background-color: green;
+}
+
+/*La 2ª columna de la 3ª fila, color de fondo amarillo */
+table tr:nth-child(3) th:nth-child(2) {
+    background-color: yellow;
+}
+
+/*La 1ª letra de cada th, de cada fila de la cabecera de la tabla, tamaño de letra al doble */
+thead tr th::first-letter {
+    font-size: 2em;
+}
+
+input:required {
+    border: 1px solid red;
+    padding: 10px;
+    width: 250px;
+}
+
+/* Después de cada etiqueta label coloca un asterisco de color rojo */
+label::after {
+    content: "*";
+    color: red;
+}
+
+/*Cuando pasamos el cursor por encima de la última columna, tamaño de letra al doble */
+th:last-child:hover,
+td:last-child:hover {
+    font-size: 2em;
+}

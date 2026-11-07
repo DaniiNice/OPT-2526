@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    background-color: orange;
+    color: white;
+    font-family: "Comic Sans MS";
+ }
+
+header, footer {
+    background-color: rgb(248, 196, 100);
+    padding: 10px;
+}
+
+header img, footer img {
+    height: 40px;
+}
+
+header {
+    box-shadow:  0 4px 8px 5px rgba(0, 0, 0, 0.265);
+    top: 0;
+}
+
+footer {
+    bottom: 0%;
+    box-shadow:  0px -4px 8px 5px rgba(0.265, 0, 0, 0.265);
+}
+
+nav {
+    background-color:  white;
+    box-shadow:  0 4px 8px 5px rgba(0, 0, 0, 0.265);
+    color: black;
+    display: inline-block;
+    left: 0px;
+    top: 70px;
+    text-align: right;
+    vertical-align: top;
+    width: 15%;
+}
+
+a {
+    color: orange;
+    display: block;
+    padding: 20px 20px 20px 0px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(248, 196, 100);
+    color: white;
+    font-style: italic;
+    padding: 20px 20px 20px 0px;
+}

@@ -1,0 +1,92 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(101, 164, 30);
+    color: white;
+    font-family: "Comic Sans MS", Arial, sans-serif;
+}
+
+/* Form */
+.fila {
+    background-color: rgb(170, 227, 86);
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.titulo {
+    background-color: white;
+    border-radius: 10px;
+    color: rgb(101, 164, 30);
+    size: 5px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    width: 890px;
+}
+
+.Lista form {
+    display: grid;
+    justify-content: center;
+    grid-auto-rows: auto;
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+.Lista label {
+    display: block; 
+    margin-bottom: 5px;
+}
+
+.Lista input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.Lista textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.Lista input[type="submit"] {
+    width: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    color: rgb(101, 164, 30);
+    cursor: pointer;
+    font-size: 17px;
+    border: 3px solid rgb(101, 164, 30);
+    font-family: "Comic Sans MS", Arial, sans-serif;
+}
+
+.Lista input[type="reset"] {
+    width: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    color: rgb(101, 164, 30);
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    border: 3px solid rgb(101, 164, 30);
+    font-family: "Comic Sans MS", Arial, sans-serif;
+}
+
+p {
+    margin-left: 20px;
+}

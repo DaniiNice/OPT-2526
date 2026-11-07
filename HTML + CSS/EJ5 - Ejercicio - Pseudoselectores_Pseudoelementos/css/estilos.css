@@ -1,0 +1,52 @@
+a:link {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+}
+
+a:visited {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* El primer hijo li de cualquier lista */
+li:first-child {
+  background-color: grey;
+}
+
+/* El último hijo li de la primera lista de tipo ul */
+ul:first-of-type li:last-child {
+  background-color: blue;
+  color: white;
+}
+
+/* La última lista de tipo ul */
+ul:last-of-type {
+  border: 1px solid black;
+}
+
+/* El segundo hijo li de la última lista de tipo ul */
+ul:last-of-type li:nth-child(2) {
+  color: orange;
+}
+
+/* La primera letra de cualquier párrafo */
+p::first-letter {
+  font-size: 2em;
+  color: red;
+}
+
+/* La primera línea de cualquier párrafo */
+p::first-line {
+  font-size: 1.2em;
+  color: rgb(111, 111, 207);
+}
+
+/* Después de todos los párrafos */
+p::after {
+  content: "FIN";
+  border: 1px solid green;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<title>Prueba</title>
+		<link href="css/Foro.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<form name="form2">
+			<div class="Formulario">
+				<div class="Titulo">NUEVO MENSAJE PARA EL FORO - PRUEBA 05 de Junio de 2026</div>
+
+				<div class="Col1">
+					Autor (*):
+					<p>Título del mensaje (*):</p>
+					<p>Mensaje (*):</p>
+				</div>
+
+				<div class="Col2">
+					<input type="text" name="autor" id="text1" size=40>
+					<p><input type="text" name="titulo" id="text2" size=40></p>
+					<p><textarea  name="mensaje" id="text3" rows=5 cols=60></textarea></p>
+				</div>
+				
+				<div class="botones">
+					<input type="button" value="Enviar" onclick="validaCamposVacios()">
+					<input type="reset" value="Borrar">
+				</div>
+				
+				<div id="obligatorios">(*) Campos obligatorios</div>
+			</div>
+		</form>
+		<script src="js/DanielFerreira.js"></script>
+	</body>
+</html>	

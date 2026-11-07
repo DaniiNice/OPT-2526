@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 4</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <table bgcolor="BBBBBB" width="100%">
+                <tr>
+                    <td><label for="Nombre">Nombre:</label></td>
+                    <td><label for="Apellido">Apellido:</label></td>
+                    <td><label for="DNI">DNI</label></td>
+                </tr>
+                <td><input type="text" id="Nombre" name="Nombre" required></td>
+                <td><input type="text" id="Apellido" name="Apellido" required></td>
+                <td><input type="text" id="DNI" name="DNI" required></td>
+                <tr>
+                    <td><label for="Localidad">Localidad de Nacimiento</label></td>
+                    <td><label for="Provincia">Provincia:</label></td>
+                    <td><label for="Fecha de Nacimiento">Fecha de Nacimiento</label></td>
+                </tr>
+                <td><input type="text" id="Localidad" name="Localidad" required></td>
+                <td><input type="number" id="Provincia" name="Provincia" required></td>
+                <td><input type="date" id="Fecha de Nacimiento" name="Fecha de Nacimiento" required></td>
+                <tr>
+                    <td><label for="Dirección">Dirección</label></td>
+                    <td></td>
+                    <td><label for="Código Postal">Código Postal:</label></td>
+                </tr>
+                <td><input type="text" id="Dirección" name="Dirección" required></td>
+                <td></td>
+                <td><input type="number" id="Código Postal" name="Código Postal" required></td>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Forma de Acceso</legend>
+            <table bgcolor="dea5a0" width="100%">
+                    <td><dl>
+                        <dt><input type="radio" id="Directo" name="Directo" value="D">Directo</dd>
+                            <dd><input type="radio" id="2" name="2" value="B">Bachillerato Log Modalidad<input type="text"></dd>
+                            <dd><input type="radio" id="2" name="2" value="B">Experimental</dd>
+                            <dd><input type="radio" id="2" name="2" value="B">COU Opción<input type="text"></dd>
+                            <dd><input type="radio" id="2" name="2" value="B">FP2</dd>
+                            <dd><input type="radio" id="2" name="2" value="B">Otros (especifíque)<input type="text"></dd>
+                        </dt>
+                        <dt><input type="radio" id="Directo" name="Directo" value="D" required>Prueba libre</dd></dt>
+                    </td></dl>
+            </table>
+        </fieldset>
+        <input type="checkbox" required>Acepto términos y condiciones <br>
+        <input type="submit" name="Enviar" value="Enviar"></input> <br>
+        <input type="reset" name="Restablecer" value="Restablecer"></input>
+    </form>
+</body>
+</html>

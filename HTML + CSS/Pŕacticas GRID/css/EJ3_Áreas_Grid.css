@@ -1,0 +1,37 @@
+.tabla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 75%;
+    height: 300px;
+}
+
+.azul {
+    background-color: #1e90ff;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+
+.rojo {
+    background-color: red;
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+}
+
+.blanco {
+    background-color: white;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.amarillo {
+    background-color: yellow;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+
+.verde {
+    background-color: green;
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+}

@@ -1,0 +1,37 @@
+p, a {
+	color: rgb(255, 0, 140);
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	background-color: #2d0970;
+	margin-left: 25px;
+	padding: 20px;
+	margin-left: -1px;
+	position: sticky;
+	display: flex;
+	top: 0;
+}
+
+.birras {
+	width: 100%;
+}
+
+.ventana {
+	background-color: #2d0970;
+	width: 200px;
+	height: 100px;
+	float: left;
+}
+
+h1 {
+	color: rgb(18, 1, 95);
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+footer {
+	background-color: #2d0970;
+}

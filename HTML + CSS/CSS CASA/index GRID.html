@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Grid - Panel de Servidor</title>
+    <link rel="stylesheet" href="css/Servidor.css">
+</head>
+<body>
+    <form name="panel-servidor">
+        <div class="Panel-Control">
+            
+            <div class="Bloque-Titulo">
+                SISTEMA DE MONITOREO - SERVIDOR DE PRODUCCIÓN (SMR-2026)
+            </div>
+
+            <div class="Bloque-Lateral">
+                <p><strong>CPU:</strong> 42%</p>
+                <p><strong>RAM:</strong> 11.4 GB / 16 GB</p>
+                <p><strong>S.O:</strong> Ubuntu Server</p>
+            </div>
+
+            <div class="Bloque-Contenido">
+                <p>• Servidor Web Apache (Puerto 80) - <span class="online">ONLINE</span></p>
+                <p>• Base de Datos MySQL (Puerto 3306) - <span class="online">ONLINE</span></p>
+                <p>• Servicio SSH (Puerto 22) - <span class="online">ONLINE</span></p>
+            </div>
+            
+            <div class="Bloque-Botones">
+                <input type="button" value="Reiniciar Apache">
+                <input type="reset" value="Limpiar Logs">
+            </div>
+            
+            <div id="Bloque-Pie">
+                (*) Alerta: Copia de seguridad automatizada programada para las 23:00.
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>

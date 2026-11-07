@@ -1,0 +1,132 @@
+body {
+    font-family: 'Lobster';
+    background:#eee;
+    color: grey;
+    height: 1000px;
+}
+.Cabecera {
+    margin-top: -10px;
+    background-color: #eee;
+    color: gray;
+    font-size: 20px;
+    text-align: center;
+    margin-left: -10px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid grey;
+}
+.Pie {
+    background-color: #eee;
+    color: gray;
+    margin-top: 10px;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    border-top: 1px solid grey;
+    display: grid;
+    grid-template-columns: 100px 420px 260px;
+    justify-content: space-between;
+}
+.Lateral {
+    width: 100px;
+    background-color: #eee;
+    display: grid;
+    margin-top: 10px;
+    padding: 25px 50px;
+}
+.cuadros {
+    padding: 10px;
+    font-size: 20px;
+}
+.CuadrosFotos1 {
+    display: grid;
+    margin-top: -300px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: end;
+}
+.CuadrosFotos2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2px;
+}
+img {
+    border-radius: 10px;
+}
+.img1 {
+    margin-top: 30px;
+    width: 450px;
+    height: 200px;
+}
+.cuadroimg1 {
+    width: 550px;
+    height: 330px;
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 280px;
+}
+.img2 {
+    margin-top: 30px;
+    width: 300px;
+    height: 200px;
+}
+.img2p {
+    font-size: 30px;
+}
+.cuadroimg2 {
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 350px;
+    text-align: center;
+    height: 330px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.img3 {
+    width: 250px;
+    height: 200px;
+    margin-top: 30px;
+}
+.img3p {
+    font-size: 30px;
+}
+.cuadroimg3 {
+    border: 1px solid grey;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 300px;
+}
+.img4 {    margin-top: 30px;
+    height: 200px;
+    width: 250px;
+}
+.img4p {
+    font-size: 30px;
+}
+.cuadroimg4 {
+    border: 1px solid grey;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+.img5 {
+    margin-top: 30px;
+    height: 200px;
+    width: 250px;
+}
+.img5p {
+    font-size: 30px;
+}
+.cuadroimg5 {
+    border: 1px solid grey;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+}

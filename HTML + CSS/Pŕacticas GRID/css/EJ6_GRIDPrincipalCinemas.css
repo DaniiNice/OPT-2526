@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    width: 100%;
+}
+body{
+    background-color: #3d3394;
+    font-family: 'Comic Relief', system-ui;
+}
+.Cabecera{
+    display: grid;
+    grid-template-columns: 1fr 1fr 500px;
+}
+.Cuerpo2{
+    display: grid;
+    grid-template-columns: 375px 600px 500px;
+    width: 10%;
+    margin-top: 20px;
+}
+.logo{
+    width: 860px;
+    height: 180px;
+}
+.Caja1, .Caja3{
+    border-radius: 10px;
+    background-color: #7a74d8;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.Caja2{
+    border-radius: 10px;
+    background-color: #7a74d8;
+    height: 100px;
+    width: 880px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.CARRETE{
+    width: 180px;
+    height: 170px;
+    margin-top: 5px;
+}
+a:hover{
+    color: #7a74d8;
+    background-color: white;
+}
+a{
+    border-radius: 10px;
+    background-color: #7a74d8;
+    height: 115px;
+    width: 350px;
+    margin: 3px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+}
+.Botones{
+    margin-left: 10px;
+    width: 380px;
+}
+.NuestraCartelera, .NuestrosPremios {
+    margin-top: -3px;
+}
+.foro, .ÁreaClientes, .NuestrasSalas, .NuestrosMenús {
+    margin-top: 10px;
+}
+.Camara img{
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 360px;
+    width: 600px;
+}

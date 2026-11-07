@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabla CSS</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+</head>
+<body>
+    
+    <table class="table">
+        <caption>HORARIO DE CLASE CURSO 2025-2026</caption>
+        <tr>
+            <td>HORAS</td>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miércoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+        </tr>
+        <tr>
+            <td>8:00</td>
+            <td rowspan="2">Matemáticas</td>
+            <td>Lengua</td>
+            <td>Inglés</td>
+            <td colspan="2">Ciencias</td>
+        </tr>
+        <tr>
+            <td>9:00</td>
+            <td>Historia</td>
+            <td>Ciencias</td>
+            <td>Matemáticas</td>
+            <td>Lengua</td>
+        </tr>
+        <tr>
+            <td>10:00</td>
+            <td colspan="5">RECREO</td>
+        </tr>
+        <tr>
+            <td>10:30</td>
+            <td>Inglés</td>
+            <td rowspan="2">Ciencias</td>
+            <td>Matemáticas</td>
+            <td>Lengua</td>
+            <td>Historia</td>
+        </tr>
+        <tr>
+            <td>11:30</td>
+            <td>Historia</td>
+            <td>Ciencias</td>
+            <td>Matemáticas</td>
+            <td>Inglés</td>
+        </tr>
+    </table>
+    <form action="email">
+            <br><label>Email</label> <input type="email" name="email" required placeholder="Inserte email del destinatario">
+            <br><br><input type="submit" value="Enviar horario">
+    </form>
+</body>
+</html>

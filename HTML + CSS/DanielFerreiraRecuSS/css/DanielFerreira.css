@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    background-color: rgb(180, 42, 42);
+    font-weight: 500;
+    font-family: 'Comic Sans MS', Arial, Helvetica, sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+
+/* Estilos para el formulario con GRID */
+.Formulario {
+    background-color: rgb(230, 96, 96);
+    border-radius: 10px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 238px);
+    grid-template-rows: repeat(8, 50px);
+    height: 430px;
+    margin: 5px auto;
+    width: 950px;
+}
+
+/* Estilos para el título cuadrandolo segun GRID */
+.Titulo {
+    align-self: center;
+    background-color: white;
+    border-radius: 10px;
+    color:rgb(180, 42, 42);
+    font-weight: bold;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    margin: 2px auto;
+    padding: 4px;
+    width: 95%;
+}
+
+/* Estilos para el subtitulo cuadrandolo segun GRID */
+.Subtitulo {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    text-align: center;
+}
+
+/* Estilos para las columnas cuadrandolo segun GRID */
+.Col1 {
+    grid-column: 1/2;
+    grid-row: 3/7;
+    text-align: right;
+}
+
+.Col2 {
+    grid-column: 2/3;
+    grid-row: 3/7;
+    text-align: left;
+}
+
+.Col3 {
+    grid-column: 3/4;
+    grid-row: 3/7;
+    text-align: right;
+}
+
+.Col4 {
+    grid-column: 4/5;
+    grid-row: 3/7;
+    text-align: left;
+}
+
+/* Estilos para los botones cuadrandolo segun GRID */
+.boton1 {
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 7/8;
+    text-align: right;
+}
+
+.boton2 {
+    align-self: center;
+    grid-column: 3/4;
+    grid-row: 7/8;
+    text-align: left;
+}
+
+.obligatorios {
+    align-self: center;
+    grid-column: 1/5;
+    grid-row: 8/9;
+}
+
+input {
+    color: rgb(180, 42, 42);
+    font-style: italic;
+    font-size: small;
+}
+
+input[type="button"], input[type="reset"]  {
+    border: 3px solid rgb(180, 42, 42);
+    border-radius: 10px;
+    font-family: 'Comic Sans MS', Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-style: normal;
+    font-weight: bolder;
+    padding: 5px 20px;
+}

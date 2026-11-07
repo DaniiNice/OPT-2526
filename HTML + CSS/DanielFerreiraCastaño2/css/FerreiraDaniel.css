@@ -1,0 +1,68 @@
+/* Cambiamos el color del fondo de toda la página */
+body {
+    background-color: grey;
+}
+
+/* Ajustamos la cabecera en su lugar con su decoracion */
+.cabecera {
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-items: end;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 6px;
+}
+
+/* Editamos el tamaño de la foto de la cabecera */
+#dos {
+    height: 170px;
+    width: 1002px;
+}
+
+.contenido {
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-items: end;
+    align-items: center;
+}
+
+.fondo {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 480px;
+    width: 1000px;
+}
+
+/* Customizamos la seccion de botones */
+.seccion {
+    border-radius: 10px;
+    color: white;
+    margin-top: -15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 500px;
+    width: 310px;
+}
+
+.cuadrado {
+    border-radius: 10px;
+    border: 3px solid white;
+    height: 200px;
+    width: 310px;
+}
+
+/* Customizamos los botones */
+a {
+    color: white;
+    text-decoration: none;
+}

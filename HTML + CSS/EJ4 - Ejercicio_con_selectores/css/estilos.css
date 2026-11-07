@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+li {
+    color: red;
+}
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    margin: 0px auto;
+    width: 50%;
+}
+.col1 {
+    background-color: red;
+    color: white;
+}
+
+.gb {
+    background-color: gray;
+    font-size: 2em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#cinco {
+    background-color: yellow;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+[colspan="2"], [colspan="3"] 
+{
+    background-color: blue;
+}

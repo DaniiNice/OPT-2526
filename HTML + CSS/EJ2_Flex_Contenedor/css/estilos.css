@@ -1,0 +1,57 @@
+.Caja {
+    background-color: lightgrey;
+    padding: 70px;
+}
+
+.Caja2 {
+    background-color: rgb(34, 151, 141);
+    margin-top: 50px;
+    height: 300px;
+}
+
+.contenedor {
+    margin-bottom: 40px;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.boxs {
+    align-self: center;
+    align-content: center;
+    background-color: rgb(121, 255, 239);
+    border: 1px solid black;
+    padding: 10px;
+    height: 70px;
+    width: 150px;
+}
+
+#box {
+    align-self: center;
+    height: 100px;
+    width: 200px;
+}
+
+.contenedor2 {
+    gap: 60px;
+    margin-bottom: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedor3 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.boxs2 {
+    background-color: hsl(39, 100%, 74%);
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 400px;
+}

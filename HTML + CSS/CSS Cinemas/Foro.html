@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro</title>
+    <link rel="stylesheet" href="css/estilos2.css" type="text/css"/>
+</head>
+<body>
+    <!-- CABECERA DIVIDIDA EN 3 -->
+    <div class="contenedor">
+        <header class="cabecera">
+            <div class="columna izquierda">
+                <img src="img/CARRETE.JPG" alt="Carrete izquierdo">
+            </div>
+            <div class="columna centro logo">
+                <img src="img/logo.bmp" alt="Logo">
+            </div>
+            <div class="columna derecha">
+                <img src="img/CARRETE.JPG" alt="Carrete derecho">
+            </div>
+        </header>
+
+        <!-- CONTENIDO -->
+        <main class="contenido">
+            <section class="Titulo">
+                <h1>NUEVO MENSAJE PARA EL FORO</h1>
+            </section>
+            <nav class="menu izquierdo">
+                <a href="Principal.html">Principal</a>
+                <a href="Nuestra_Cartelera.html">Nuestra Cartelera</a>
+                <a href="Nuestras_Salas.html">Nuestras Salas</a>
+                <a href="Nuestros_Menus.html">Nuestros Menús</a>
+                <a href="Area_Clientes.html">Área de Clientes</a>
+                <a href="Nuestros_Premios.html">Nuestros Premios</a>
+            </nav>
+            <section class="Lista">
+                <form class="form-foro">
+                    <div class="fila">
+                        <label for="nombre">Autor:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="Titulo">Título del mensaje:</label>
+                        <input type="text" id="Titulo" name="Titulo" required>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="7" cols="40" required></textarea>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

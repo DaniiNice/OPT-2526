@@ -1,0 +1,47 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#eee;
+}
+.primercuadro{
+    background:#aaa;
+    padding:40px;
+    display:flex;
+    justify-content:center;
+}
+.contenido1{
+    display:flex;
+}
+.cuadroverde{
+    background:#77e0c0;
+    padding:15px 30px;
+    border:1px solid black;
+    height: 40px;
+    width: 100px;
+    margin-top: -20px;
+}
+.logo{
+    color:white;
+    font-weight:bold;
+}
+.segundocuadro{
+    background:#aaa;
+    margin-top:40px;
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+    gap:90px;
+}
+.cuadrosnaranjas{
+    display:flex;
+    justify-content:space-between;
+    margin-top: -40px;
+}
+.cuadrosnaranjas.center{
+    justify-content:center;
+}
+.caja{
+    background:#d6b07a;
+    width: 360px;
+    padding: 10px;
+    border:1px solid black;
+}

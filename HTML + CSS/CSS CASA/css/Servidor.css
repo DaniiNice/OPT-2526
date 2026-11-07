@@ -1,0 +1,74 @@
+/* RESET DE ESTILOS BÁSICOS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(40, 44, 52);
+  font-family: "Comic Sans MS", Arial, sans-serif;
+  padding-top: 20px;
+}
+
+/* Dividimos el contenedor en una cuadrícula */
+.Panel-Control {
+  display: grid;
+  grid-template-columns: 30% 65%;
+  grid-template-rows: repeat(5, 75px);
+  margin: 20px auto;
+  width: 80%;
+}
+
+/* Cuadramos el título */
+.Bloque-Titulo {
+  align-self: center;
+  background-color: #f79595;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  text-align: center;
+}
+
+/* Cuadramos el bloque lateral */
+.Bloque-Lateral {
+  background-color: #95f7b4;
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  text-align: right;
+}
+
+/* Cuadramos el bloque de contenido */
+.Bloque-Contenido {
+  background-color: #f7f295;
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+  text-align: left;
+}
+
+/* Cuadramos el bloque de botones */
+.Bloque-Botones {
+  align-self: center;
+  background-color: #95d1f7;
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  justify-self: start;
+  padding-left: 15px;
+}
+
+/* Estilo para los botones inputs dentro del bloque */
+.Bloque-Botones input {
+  border: 2px solid rgb(40, 44, 52);
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Comic Sans MS", Arial, sans-serif;
+  padding: 5px 15px;
+}
+
+/* Cuadramos el pie de página */
+#Bloque-Pie {
+  align-self: center;
+  background-color: #ec95f7;
+  grid-column: 1 / 3;
+  grid-row: 5 / 6;
+  text-align: center;
+}

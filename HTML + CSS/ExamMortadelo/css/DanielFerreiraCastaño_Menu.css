@@ -1,0 +1,66 @@
+/* Cambiamos el color del fondo de toda la página */
+body {
+    background-color: grey;
+}
+
+/* Ajustamos la cabecera en su lugar con su decoracion */
+.cabecera {
+    background-color: black;
+    border-radius: 10px;
+    display: row;
+    height: 200px;
+}
+
+/* Editamos las fotos de la cabecera */
+#uno {
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+#dos {
+    height: 170px;
+    width: 970px;
+}
+
+/* Ajustamos el menu con sus botones */
+.seccion {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    margin-top: -15px;
+    text-align: center;
+    height: 500px;
+    width: 400px;
+}
+
+/* Customizamos los botones */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Añadimos la decoracion cuando el mouse esta encima */
+#tres:hover, #cuatro:hover, #cinco:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Ajustamos las cajas de los botones */
+#tres, #cuatro, #cinco {
+    height: 50px;
+    margin-left: 50px;
+    width: 300px;
+}
+
+/* Ajustamos el contenido central de la página */
+.contenido {
+    display: row;
+}
+
+.fondo img {
+    border-radius: 10px;
+    margin-top: -785px;
+    margin-left: 407px;
+    height: 500px;
+    width: 1017px;
+}

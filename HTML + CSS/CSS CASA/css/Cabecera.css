@@ -1,0 +1,65 @@
+/* RESET DE ESTILOS BÁSICOS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(240, 242, 245); /* Gris claro de fondo para que resalte la barra */
+  font-family: "Comic Sans MS", Arial, sans-serif;
+}
+
+/* CONTENEDOR CONTENEDOR FLEXBOX (LA CABECERA) */
+.Cabecera {
+  align-items: center; /* Centra verticalmente el Logo, Menú y Usuario */
+  background-color: rgb(33, 37, 41); /* Fondo oscuro estilo barra de navegación */
+  color: #ffffff;
+  display: flex; /* Activa el modo Flexbox de una sola dimensión */
+  height: 80px; /* Altura fija exigida */
+  justify-content: space-between; /* ¡El truco! Envía el Logo a la izq, Menú al centro y Usuario a la der */
+  padding: 0 20px; /* Margen interno para que no pegue a los bordes de la pantalla */
+}
+
+/* ESTILOS DE LOS COMPONENTES INTERNOS */
+
+/* Bloque del Logo */
+.Logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Bloque del Menú Central (también actúa como contenedor Flex) */
+.Menu-Central {
+  display: flex; /* Hacemos que los enlaces también se comporten con Flex */
+  gap: 25px; /* Separa los enlaces de forma automática sin usar margin-right */
+}
+
+/* Enlaces del menú */
+.Menu-Central a {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Efecto hover exigido implícitamente para una buena nota */
+.Menu-Central a:hover {
+  text-decoration: underline;
+}
+
+/* Bloque del Usuario (Flex para alinear el avatar y el botón) */
+.Usuario {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+}
+
+/* Botón de Salir */
+.Usuario button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Comic Sans MS", Arial, sans-serif;
+  padding: 6px 12px;
+}

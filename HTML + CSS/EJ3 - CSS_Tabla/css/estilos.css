@@ -1,0 +1,29 @@
+table, td {
+  margin: 0px auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+tr td:first-child{
+  background-color: green;
+}
+
+tr:nth-child(4) td:nth-child(2) {
+  text-align: center;
+  font-weight: bold;
+  background-color: yellow;
+}
+
+tr:first-child td::first-letter {
+  font-size: 2em;
+}
+
+label::after {
+  content: "*";
+  color: red;
+}
+
+input:required {
+  border: 1px solid red;
+}

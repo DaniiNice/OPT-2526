@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+</head>
+<body>
+    <!--CREADO EN CHROME-->
+    <!--Creamos el titulo y subtitulo-->
+    <h1><center>Formulario de suscripción</center></h1>
+    <p><strong>Nuestra editorial le ofrece la posibilidad de suscribirse a nuestro boletín de novedades, manteniéndose así al día de todos los titulos que publicamos. Únicamente tiene que completar el siguiente formulario</strong></p>
+    <!--Creamos la tabla con el estilo formulario-->
+    <form>
+        <table align="center" cellspacing="2" width="80%">
+            <!--Primera fila-->
+            <tr>
+                <td align="center" colspan="5" bgcolor="EA7509" style="color: white;"><h2>Datos de suscripción</h2></td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="AEA9A9" colspan="3" style="color: white;"><h3>Identificación</h3></td>
+                <td align="center" bgcolor="AEA9A9" style="color: white;"><h3>Periodicidad</h3></td>
+                <td align="center" bgcolor="AEA9A9" style="color: white;"><h3>Formato</h3></td>
+            </tr>
+            <tr>
+                <td colspan="3" bgcolor="D6D1D1">
+                    <br>
+                    <label for="Correo">Correo electrónico: </label>
+                    <input type="email" maxlength="40" placeholder="cuenta@dominio.com" id="Correo"><br><br>
+                    Introduzca una contraseña: <input type="text" maxlength="10"><br>
+                    <font size="-1">(Utilice contraseñas complejas, combinando letras mayúsculas, minúsculas y números)</font> 
+                </td>
+                <td bgcolor="D6D1D1">
+                    <input type="radio" id="2" name="2" value="B" checked="si">Semanalmente <br>
+                    <input type="radio" id="2" name="2" value="B">Cada 15 días <br>
+                    <input type="radio" id="2" name="2" value="B">Mensualmente
+                </td>
+                <td bgcolor="D6D1D1">
+                    <input type="radio" id="3" name="3" value="B" checked="si">HTML <br>
+                    <input type="radio" id="3" name="3" value="B">Sólo texto <br>
+                    <input type="radio" id="3" name="3" value="B">PDF
+                </td>
+            </tr>
+            <!--Segunda fila-->
+            <tr>
+                <td align="center" bgcolor="AEA9A9" colspan="3" style="color: white;"><h3>Contenido del boletin</h3></td>
+                <td colspan="2" align="center" bgcolor="AEA9A9" style="color: white;"><h3>Otros Datos</h3></td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="D6D1D1">
+                    <center>
+                        <label for="temas">Temas</label><br>
+                        <select id="temas" name="temas" size="10" multiple>
+                        <option value="Todos">Todos</option>
+                        <option value="PhotoShop">PhotoShop</option>
+                        <option value="Macromedia">Macromedia Flash</option>
+                        <option value="CorelDraw">CorelDraw</option>
+                        <option value="Visual">Visual Basic</option>
+                        <option value="Java">Java</option>
+                        <option value="C++">C/C++</option>
+                        <option value="Windows">Windows</option>
+                        <option value="Linux">Linux</option>
+                        <option value="Mac">Mac OS X</option>
+                    </center>
+                </select>
+                </td>
+                <td bgcolor="D6D1D1">
+                <center>
+                    <label for="Colecciones">Colecciones</label><br>
+                    <select id="Colecciones" name="Colecciones">
+                    <option value="Todas">Todas</option>
+                    <option value="biblia">La biblia de</option>
+                    <option value="Guía">Guía práctica</option>
+                    <option value="Manual">Manual imprescindible</option>
+                    <option value="Manual2">Manual avanzado</option>
+                    <option value="Guía2">Guía visual</option>
+                </center>
+                </td>
+                <td colspan="2" bgcolor="D6D1D1"> 
+                    <center>
+                    <input type="checkbox" checked>Quiero recibir información publicitaria <br><br>
+                    Comentarios: <br>
+                    <textarea name="texto" cols="45" rows="11" placeholder="Háganos llegar sus comentarios sobre nuestro servicio"></textarea>
+                    </center>
+                </td>
+            </tr>
+        </table>
+        <center>
+            <br>
+            <input type="submit" name="Enviar" value="Suscribirse al boletín informativo"></input>
+            <input type="reset" name="Enviar" value="Restablecer los valores del formulario"></input>
+        </center>
+    </form>
+</body>
+</html>

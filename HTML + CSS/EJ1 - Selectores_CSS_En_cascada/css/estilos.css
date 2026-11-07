@@ -1,0 +1,45 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#main {
+  background-color: grey;
+}
+
+.especial {
+  color: blue;
+}
+
+h2,
+h3 {
+  border: 1px solid orange;
+}
+
+li {
+  color: red;
+}
+
+/* Selecciona aquellos "li" que están dentro de otros "li" */
+li li {
+  color: green;
+}
+
+/* Selecciona aquellas imágenes que son hijos directos de "p" */
+p > img {
+  border: 5px solid black;
+}
+
+/* Selecciona aquellas imágenes que tienen la propiedad "alt" igual a "segunda" */
+img[alt="segunda"] {
+  border: 5px solid red;
+}
+
+/* Selecciona aquellos "h3" que tengan la clase "antes" y que estén detrás de elementos "p"*/
+p ~ h3.antes {
+  background-color: pink;
+}
+
+/* Selecciona aquellos "h3" que estén justo a continuación de elementos "p" */
+p + h3 {
+  background-color: blue;
+}

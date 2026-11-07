@@ -1,0 +1,87 @@
+.tabla1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    width: 75%;
+    height: 250px;
+}
+
+.azul {
+    background-color: blue;
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    color: white;
+}
+
+.rojo {
+    background-color: red;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    color: white;
+}
+
+.amarillo {
+    background-color: yellow;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.tabla2 {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 100px;
+    width: 75%;
+}
+
+.primero {
+    background-color: blue;
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    color: white;
+}
+
+.segundo {
+    background-color: #e8d7b5;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.tercero {
+    background-color: brown;
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    color: white;
+}
+
+.cuarto {
+    background-color: green;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    color: white;
+}
+
+.gris1 {
+    background-color: gray;
+    grid-row: 2 / 3;
+}
+
+.gris2 {
+    background-color: gray;
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+}
+
+.gris3 {
+    background-color: gray;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.negro {
+    background-color: black;
+    grid-row: 1 / 4;
+    grid-column: 4 / 4;
+    width: 200px;
+}
+

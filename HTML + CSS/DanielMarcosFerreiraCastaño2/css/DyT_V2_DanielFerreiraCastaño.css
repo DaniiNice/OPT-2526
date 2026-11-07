@@ -1,0 +1,43 @@
+.contenido, .contenido2 {
+    height: 396px;
+    margin-left: 320px;
+    margin-top: -395px;
+    width: 950px;
+}
+
+#imgbox, #imgbox2, #imgbox3, #imgbox4 {
+    background-color: rgb(255, 199, 95);
+    border-radius: 12px;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.25);
+    height: 190px;
+    padding: 15px;
+    width: 180px;
+}
+
+.fix {
+    height: 160px;
+    border-radius: 12px;
+    width: 150px;
+}
+
+#imgbox {
+    margin-top: 7px;
+}
+
+#imgbox2 {
+    margin-top: 7px;
+}
+
+#imgbox3 {
+    margin-left: 400px;
+    margin-top: -188px;
+}
+
+#imgbox4 {
+    margin-left: 800px;
+    margin-top: -188px;
+}
+
+#tira1 {
+    margin-top: 488px;
+}
